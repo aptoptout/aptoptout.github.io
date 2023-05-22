@@ -1,0 +1,192 @@
+@import url("https://use.typekit.net/voi4gwi.css");
+
+:root {
+	--base-unit-s: 18px;
+	--base-unit-m: calc(var(--base-unit-s) * 1.5);
+	--base-unit-l: calc(var(--base-unit-s) * 3);
+	--main-color: rgb(0, 212, 96);
+}
+
+html {
+	font-family: 'aktiv-grotesk', sans-serif;
+	font-size: var(--base-unit-s);
+}
+
+body {
+	margin: var(--base-unit-m);
+}
+
+img {
+	width: 100%;
+	display: block;
+}
+
+/*
+/*
+/* TYPOGRAPHY */
+
+a {
+	color: var(--main-color);
+	text-decoration: none;
+}
+
+a:hover {
+	color: black;
+}
+
+p {
+	margin: 0;
+	line-height: 1.33em;
+}
+
+h1 {
+	font-size: 1.1667rem;
+}
+
+h2 {
+	font-size: 1rem;
+}
+
+h1,
+h2 {
+	font-weight: normal;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+h1 + p,
+h2 + p, 
+p + p {
+	margin-top: 0.665em;
+}
+
+/*
+/*
+/* GRID */
+
+.column-grid {
+	display: grid;
+	grid-gap: var(--base-unit-l);
+}
+
+.column-grid-12 {
+	grid-template-columns: repeat(12, 1fr);
+}
+
+.column-grid-9 {
+	grid-template-columns: repeat(9, 1fr);
+}
+
+.column-small {
+	grid-column: span 3;
+}
+
+.column-large {
+	grid-column: span 6;
+}
+
+.stick-to-top {
+	align-self: start;
+	position: sticky;
+	top: var(--base-unit-m);
+}
+
+/*
+/*
+/* NAVIGATION */
+
+nav {
+	font-size: 1.1667rem;
+}
+
+/*
+/*
+/* WORK INDEX */
+
+main {
+	grid-column: 4 / span 9;
+}
+
+#work {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.project-thumbnail {
+	margin-top: 0;
+	margin-bottom: var(--base-unit-l);
+}
+
+.project-thumbnail:last-of-type {
+	margin-bottom: 0;
+}
+
+.project-thumbnail-info-metadata {
+	color: black;
+}
+
+.project-thumbnail-info-description {
+	color: rgba(0, 0, 0, 1);
+}
+
+/*
+/*
+/* PROJECT PAGE */
+
+.project-media figure {
+	margin-top: 0;
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: var(--base-unit-m);
+}
+
+.project-media figure:last-of-type {
+	margin-bottom: 0;
+}
+
+.project-media figure figcaption {
+	font-size: 0.78rem;
+	font-style: italic;
+	padding-top: 0.5em;
+}
+
+/*
+/*
+/* MOBILE */
+
+@media (max-width: 1024px) {
+	body {
+		margin: calc(var(--base-unit-s) / 1.5);
+	}
+
+	.column-grid {
+		display: block;
+	}
+
+  	.column-small {
+		padding-bottom: var(--base-unit-s);
+	}
+
+	.column-large {
+		grid-column: span 1;
+	}
+
+	.stick-to-top {
+		position: relative;
+		top: unset;
+	}
+
+	nav.column-small {
+		padding-bottom: var(--base-unit-l);
+	}
+
+	h1, h2, p {
+		font-size: 1.1667rem;
+	}
+
+	.project-thumbnail-info-description {
+		display: none;
+	}
+}
+
