@@ -1,4 +1,11 @@
-@import url("https://use.typekit.net/voi4gwi.css");
+/*
+/*
+/* GENERAL */
+
+@font-face {
+    font-family: 'Authentic Sans';
+    src: url('../fonts/authentic-sans-90.woff');
+}
 
 :root {
 	--base-unit-s: 18px;
@@ -8,12 +15,12 @@
 }
 
 html {
-	font-family: 'aktiv-grotesk', sans-serif;
+	font-family: 'Authentic Sans', Helvetica, sans-serif;
 	font-size: var(--base-unit-s);
 }
 
 body {
-	margin: var(--base-unit-m);
+	margin: var(--base-unit-s);
 }
 
 img {
@@ -34,30 +41,36 @@ a:hover {
 	color: black;
 }
 
+.project-thumbnail a {
+	color: black;
+	text-decoration: none;
+}
+
+.project-thumbnail a:hover {
+	color: var(--main-color);
+}
+
+.project-thumbnail-info-metadata, 
+.project-info-metadata {
+	font-style: italic;
+}
+
+h1,
+h2,
 p {
-	margin: 0;
-	line-height: 1.33em;
-}
-
-h1 {
-	font-size: 1.1667rem;
-}
-
-h2 {
 	font-size: 1rem;
+	line-height: 1.33em;
+	font-weight: normal;
+	margin: 0;
 }
 
 h1,
 h2 {
-	font-weight: normal;
-	margin: 0;
 	text-transform: uppercase;
 }
 
-h1 + p,
-h2 + p, 
 p + p {
-	margin-top: 0.665em;
+	margin-top: 1.33em;
 }
 
 /*
@@ -89,14 +102,6 @@ p + p {
 	align-self: start;
 	position: sticky;
 	top: var(--base-unit-m);
-}
-
-/*
-/*
-/* NAVIGATION */
-
-nav {
-	font-size: 1.1667rem;
 }
 
 /*
@@ -134,6 +139,10 @@ main {
 /*
 /* PROJECT PAGE */
 
+.project-info-description {
+	margin-bottom: var(--base-unit-l);
+}
+
 .project-media figure {
 	margin-top: 0;
 	margin-left: 0;
@@ -151,9 +160,13 @@ main {
 	padding-top: 0.5em;
 }
 
+.next-project {
+	margin-top: var(--base-unit-l);
+}
+
 /*
 /*
-/* MOBILE */
+/* TABLET & MOBILE */
 
 @media (max-width: 1024px) {
 	body {
