@@ -4,14 +4,32 @@ This is a lightweight, pure HTML & CSS, portfolio website template which is free
 
 > Small note: I've added a `script.js` to illustrate how to potentially add JavaScript, if you have no need for JavaScript, you can remove the `script.js` as well as remove the `<script>` tags in the HTML documents.
 
-It uses:
+### Core focus
 
 - **Semantic markup** (`nav`, `section`, `figure`, etc.), improving structural readability
 - **CSS variables**, making it easy to configure things once and reuse across stylesheet
 - **CSS Grid**, flexible multi-column layouts
 - **Media queries**, responsive design for any device
 
-## Map structure
+### Table of contents
+
+- [Portfolio website](#portfolio-website)
+    - [Core focus](#core-focus)
+    - [Table of contents](#table-of-contents)
+    - [Map structure](#map-structure)
+  - [Web typography](#web-typography)
+  - [Preparing media for online use](#preparing-media-for-online-use)
+    - [Images](#images)
+    - [Videos](#videos)
+  - [How to take it further](#how-to-take-it-further)
+  - [Getting your website online](#getting-your-website-online)
+    - [Domain](#domain)
+    - [Hosting](#hosting)
+    - [Hosting companies \& domain providers](#hosting-companies--domain-providers)
+  - [Portfolio inspiration](#portfolio-inspiration)
+  - [Website tutorials](#website-tutorials)
+
+### Map structure
 
 ```
 assets/
@@ -29,7 +47,7 @@ work/                  (contains all projects)
 index.html             (the homepage's HTML page)
 ```
 
-## Typography
+## Web typography
 
 Web fonts are specific files (.woff or .woff2) which you can use in CSS to use on your website. There are many free-to-use fonts for on the web and also a tool to convert other font files (.ttf, otf) to web font files with Font Squirrel but keep in mind that font licenses are specific to the usage. So if you buy a print- or desktop-license for a font you're not allowed to use it online unless you buy the web-license as well.
 
@@ -90,7 +108,7 @@ To embed a Vimeo video take these steps:
 
 As of 2019 browsers block autoplaying videos, the rule is now that if a user visits a website they need to interact first in order for videos to play. This is to protect users. I believe **Vimeo Pro** still has a way for autoplay to work but best and easiest practice is to simply have videos that play upon click.
 
-## Taking it further
+## How to take it further
 
 - [How to - Portfolio Gallery with Filtering](https://www.w3schools.com/howto/howto_js_portfolio_filter.asp)
 - [How to - Mobile Navigation Menu](https://www.w3schools.com/howto/howto_js_mobile_navbar.asp)
@@ -151,7 +169,7 @@ Make sure to compare prices between hosting & domain providers, it differs quite
 - [Neostrada](https://www.neostrada.com)
 - [Godaddy](https://www.godaddy.com)
 
-## Inspirational portfolio websites
+## Portfolio inspiration
 
 - [Studio Feixen](https://www.studiofeixen.ch)
 - [United Visual Artists](https://www.uva.co.uk)
